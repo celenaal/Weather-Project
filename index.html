@@ -5,9 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-App</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+          <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5 City" id="location">Los Angeles</div>
+            <div class="col-4 Day" id="currentDate">February 10, 2022</div>
+            <div class="col-3 Day" id="currentTime">8:30</div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <form id="search-form">
+                <input id="place-input" type="text" placeholder="Enter City" />
+                <input type="Submit" value="Search" />
+              </form>
+            </div>
+            <div class="col-6">
+              <form id="current-location">
+                <input type="Submit" value="Current" />
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 Current">Current</div>
+            <div class="col-4 Today">
+              <span id="main-tempt"> 68</span>°C
+            </div>
+            <div class="col-5">
+              <ul>
+                <li> 
+                  Humidity: <span id="humidity">0</span>%
+                </li>
+                <li> 
+                  Wind: <span id="wind">0</span>km/h
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 Days">Sun</div>
+            <div class="col-2 Days">Mon</div>
+            <div class="col-2 Days">Tue</div>
+            <div class="col-2 Days">Wed</div>
+            <div class="col-2 Days">Thu</div>
+          </div>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 Temp">87°F</div>
+            <div class="col-2 Temp">85°F</div>
+            <div class="col-2 Temp">70°F</div>
+            <div class="col-2 Temp">83°F</div>
+            <div class="col-2 Temp">72°F</div>
+          </div>
+          <div class="row">
+            <div class="col-1 Picture"></div>
+            <div class="col-2 Picture">☀️</div>
+            <div class="col-2 Picture">☀️</div>
+            <div class="col-2 Picture">🌤</div>
+            <div class="col-2 Picture">☀️</div>
+            <div class="col-2 Picture">🌥</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
