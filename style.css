@@ -1,0 +1,54 @@
+body {
+  font-family: "Festive", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  line-height: 1.75;
+}
+form {
+  padding: 15px 0px;
+}
+.card {
+  background-color: #fcf8f3;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15%;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+}
+.City {
+  font-weight: 700;
+  color: #c24d2c;
+  font-size: 35px;
+}
+.Day {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.Current {
+  font-weight: 600;
+  color: black;
+  font-size: 30px;
+}
+.Temp {
+  color: #c24d2c;
+  font-weight: 675;
+  font-size: 20px;
+}
+.Today {
+  font-size: 30px;
+  color: #c24d2c;
+  font-weight: 675;
+}
+.Days {
+  color: black;
+  font-size: 20px;
+}
+.Picture {
+  font-size: 40px;
+}
