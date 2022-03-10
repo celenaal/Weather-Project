@@ -9,6 +9,9 @@ body {
 form {
   padding: 15px 0px;
 }
+p {
+  text-align: center;
+}
 .card {
   background-color: #fcf8f3;
   display: block;
