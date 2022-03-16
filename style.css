@@ -40,6 +40,7 @@ li {
   font-size: 20px;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 .City {
   font-weight: 700;
