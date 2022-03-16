@@ -1,13 +1,12 @@
 body {
-  font-family: "Festive", cursive;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  line-height: 1.75;
 }
 form {
-  padding: 15px 0px;
+  padding: 5px 0px;
+  margin-bottom: 0;
 }
 p {
   text-align: center;
@@ -21,11 +20,20 @@ p {
   border-radius: 20px;
   border-color: black;
   border-style: solid;
+  padding: 5px;
+}
+li {
+  list-style: none;
+  color: rgb(114, 73, 12);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 .City {
   font-weight: 700;
   color: #c24d2c;
-  font-size: 35px;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 .Day {
   color: black;
@@ -37,7 +45,7 @@ p {
 .Current {
   font-weight: 600;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 .Temp {
   color: #c24d2c;
@@ -45,7 +53,7 @@ p {
   font-size: 20px;
 }
 .Today {
-  font-size: 30px;
+  font-size: 25px;
   color: #c24d2c;
   font-weight: 675;
 }
