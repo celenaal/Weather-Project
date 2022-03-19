@@ -70,9 +70,18 @@ li {
   color: #c24d2c;
   font-weight: 675;
 }
-.Days {
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
   color: black;
   font-size: 20px;
+}
+.weather-forecast-temperature {
+  font-size: 16;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
 .Picture {
   font-size: 40px;
