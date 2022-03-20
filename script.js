@@ -28,6 +28,25 @@ currentTime.innerHTML = timeDisplay();
 let place = document.querySelector("#search-form");
 place.addEventListener("submit", locationInput);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (days) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+                <div class="weather-forecast-date">${days}</div>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="40">
+                <div class="weather-forecast-temperatures"> <span class="weather-forecast-temperature-max">18° </span><span class="weather-forecast-temperature-min"> 12°</span></div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + "</div>";
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //. Part 2
 
 function showTemperature(response) {
@@ -95,3 +114,5 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showcelsiusTemp);
+
+displayForecast();
