@@ -33,9 +33,6 @@ function formatDay(timeStamp) {
 let currentTime = document.querySelector("#currentTime");
 currentTime.innerHTML = timeDisplay();
 
-let place = document.querySelector("#search-form");
-place.addEventListener("submit", locationInput);
-
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -95,13 +92,18 @@ function showTemperature(response) {
 
   getForecast(response.data.coord);
 }
+
+function search(city) {
+  let apiKey = "787d6bcc78e36ba4256b2abd678854b6";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
 function locationInput(event) {
   event.preventDefault();
   let placeInput = document.querySelector("#place-input");
-  let apiKey = "787d6bcc78e36ba4256b2abd678854b6";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${placeInput.value}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showTemperature);
+  search(placeInput.value);
 }
 function currentLocation(event) {
   event.preventDefault();
@@ -119,6 +121,7 @@ function showPosition(position) {
 let currentLoc = document.querySelector("#current-location");
 currentLoc.addEventListener("click", currentLocation);
 
+let place = document.querySelector("#search-form");
+place.addEventListener("submit", locationInput);
 displayForecast();
-
 search("Los Angeles");
